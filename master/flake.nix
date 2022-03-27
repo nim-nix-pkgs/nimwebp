@@ -11,6 +11,7 @@
   inputs.src-nimwebp-master.ref   = "refs/heads/master";
   inputs.src-nimwebp-master.owner = "tormund";
   inputs.src-nimwebp-master.repo  = "nimwebp";
+  inputs.src-nimwebp-master.dir   = "";
   inputs.src-nimwebp-master.type  = "github";
   
   inputs."nimpng".owner = "nim-nix-pkgs";
