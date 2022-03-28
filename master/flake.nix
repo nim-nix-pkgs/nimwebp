@@ -11,7 +11,6 @@
   inputs.src-nimwebp-master.ref   = "refs/heads/master";
   inputs.src-nimwebp-master.owner = "tormund";
   inputs.src-nimwebp-master.repo  = "nimwebp";
-  inputs.src-nimwebp-master.dir   = "";
   inputs.src-nimwebp-master.type  = "github";
   
   inputs."nimpng".owner = "nim-nix-pkgs";
@@ -21,6 +20,14 @@
   inputs."nimpng".type  = "github";
   inputs."nimpng".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpng".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."github.com/yglukhov/clurp".owner = "nim-nix-pkgs";
+  inputs."github.com/yglukhov/clurp".ref   = "master";
+  inputs."github.com/yglukhov/clurp".repo  = "github.com/yglukhov/clurp";
+  inputs."github.com/yglukhov/clurp".dir   = "";
+  inputs."github.com/yglukhov/clurp".type  = "github";
+  inputs."github.com/yglukhov/clurp".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/yglukhov/clurp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
